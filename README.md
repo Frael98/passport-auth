@@ -1,5 +1,5 @@
-Uso de la libreria passportjs para la autenticacion de usuarios
+# Uso de la libreria passportjs para la autenticacion de usuarios
 
 Comandos
-$ npm i
-$ npm run dev
+- $ npm i
+- $ npm run dev
