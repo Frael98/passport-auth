@@ -14,7 +14,8 @@ require('./src/passport/passport-auth') // requerimos la config de passport en e
 
 //Midleware
 app.use(morgan('dev'))
-//app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({extended: false}))
+app.use(express.json())// para que reciba peticiones en json
 app.use(session({ // configuramos la session
     secret: 'mysession',
     resave: false,
