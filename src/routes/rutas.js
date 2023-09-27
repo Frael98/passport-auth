@@ -1,8 +1,15 @@
+/**
+ * Rutas Vistas
+ */
 const rutas = {
 
     Index: (req, res, next) => {
 
         res.send('Hola mundo!')
+    },
+
+    SignUp: (req, res, next) => {
+        res.render('register')
     },
 
     Login: (req, res, next) => {

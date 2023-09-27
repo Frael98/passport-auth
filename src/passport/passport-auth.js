@@ -36,7 +36,7 @@ passport.use('local-signup', new LocalStrategy({
     user.email = email
     user.password = user.encriptarPassword(password)
     await user.save()
-    console.log('Registrando ...')
+    console.log('Registrado !')
     console.log(user)
     done(null, user)
 })
