@@ -11,11 +11,11 @@ router.get('/signup', rutas.SignUp)
 
 router.post('/signup', passport.authenticate('local-signup', {
     successRedirect: '/profile',
-    failureRedirect: '/login',
+    failureRedirect: '/register',
     successMessage: "Registrado correctamente",
     failureMessage: 'intente de nuevo',
     passReqToCallback: true // indica que se pueda enviar el param req
-}))
+})) 
 
 router.use(rutas.isAuthenticated) // -> todas las rutas especificadas despues de este comando requiren autenticacion
 

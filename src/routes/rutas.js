@@ -14,7 +14,7 @@ const rutas = {
 
     Login: (req, res, next) => {
 
-        res.send('<h1>This is Login</h1>')
+        res.render('login')
     },
 
     Logout: (req, res, next) => {

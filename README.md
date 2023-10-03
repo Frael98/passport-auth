@@ -6,3 +6,11 @@ Projecto NodeJS Express y PassportJS, aprendiendo metodos de autenticacion - Str
 ## Run
 - $ npm i
 - $ npm run dev
+
+## Login
+
+![Alt text](/imgs-readme/image.png)
+
+## Register
+
+![Alt text](/imgs-readme/image1.png)
