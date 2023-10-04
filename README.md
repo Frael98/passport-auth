@@ -14,3 +14,5 @@ Projecto NodeJS Express y PassportJS, aprendiendo metodos de autenticacion - Str
 ## Register
 
 ![Alt text](/imgs-readme/image1.png)
+
+## Profile

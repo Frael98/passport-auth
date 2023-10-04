@@ -1,0 +1,14 @@
+<% layout('layouts/main') -%>
+
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-semibold">Mi Sitio</a>
+                <ul class="flex space-x-4">
+                    <form action="/logout" method="post">
+                        <button type="submit" class="text-white bg-red-500 rounded-lg px-4 py-2"> Cerrar Sesion</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>

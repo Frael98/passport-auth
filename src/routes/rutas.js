@@ -5,7 +5,7 @@ const rutas = {
 
     Index: (req, res, next) => {
 
-        res.send('Hola mundo!')
+        res.redirect('login')
     },
 
     SignUp: (req, res, next) => {
@@ -19,14 +19,19 @@ const rutas = {
 
     Logout: (req, res, next) => {
         req.logout();
-        res.send('Sesion finalizada')
+        res.redirect('/')
+        //res.send('Sesion finalizada')
     },
 
     isAuthenticated: (req, res, next) => {
         if(req.isAuthenticated()){
             return next()
         }
-        res.send('no esta autenticado')
+        res.send('no auntenticado')
+    },
+
+    Profile: (req, res) => {
+        res.render('profile')
     }
 }
 module.exports = rutas
